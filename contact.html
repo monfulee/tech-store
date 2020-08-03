@@ -16,6 +16,7 @@
 				<li><a href="contact.html">Contact Us</a></li>
 			</ul>
 		</nav>
+		<input type="search" name="" placeholder="search...">
 	</header>
 	<!-- aside section -->
 	<aside>
@@ -59,13 +60,45 @@
 			<div>
 				<label for="message">Message:</label> <textarea cols="30" rows="5" id="message" name="message"></textarea>
 			</div>
+
+			<!-- <div>
+				<label for="subject">Subject:</label>
+				<select id="subject">
+					<optgroup label="Product issues">
+						<option value="returns">Returns</option>
+						<option value="faulty_item">Faulty item</option>
+					</optgroup>
+					<optgroup label="Delivery">
+						<option value="delivery">Delivery info</option>
+						<option value="order_tracking">Traking my order</option>
+					</optgroup>
+					<optgroup label="Other">
+						<option value="advice">Advice</option>
+						<option value="advice">Other</option>
+					</optgroup>
+				</select>
+			</div> -->
+
+			<div>
+				<label for="subject">Subject:</label>
+				<input type="text" name="" id="subject" placeholder="Enter your Subject" list="subjects">
+				<datalist id="subjects">
+					<option value="returns">
+					<option value="faulty item">
+					<option value="delivery">
+					<option value="order tracking">
+					<option value="advice">
+					<option value="other">
+				</datalist>
+			</div>
+
 			<div>
 				<p>Subscribe to future offers by:</p>
 				<label for="newsletter">Newsletter</label>
 				<input type="checkbox" name="subscribe" value="newsletter">
 
 				<label for="email-checkbox">Email</label>
-				<input type="checkbox" name="subscribe" value="email-checkbox"> 
+				<input type="checkbox" name="subscribe" value="email-checkbox" checked="checked"> 
 
 				<label for="post">Post</label>
 				<input type="checkbox" name="subscribe" value="post">
@@ -79,7 +112,16 @@
 				<label for="emailresponse">Email</label>
 				<input type="radio" name="response" id="emailresponse" value="email" checked="checked">
 			</div>
+
+			<div>
+<!-- 				<input type="submit" name=""> -->
+					<button type="submit">Submit</button>
+					<input type="reset" name="">
+			</div>
 		</form>
+
+		<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJAf9D3La1j4ARuwKZtGjgMXw&key=AIzaSyDPLzlRJEaAaNB5TdCST7FJOhEAwB1nuJg" allowfullscreen></iframe>
+
 	</main>
 
 	<footer>
