@@ -51,13 +51,33 @@
 		<h2>Contact Us</h2>
 		<form>
 			<div>
-				Name: <input type="text" placeholder="Enter your name">
+				<label for="name">Name:</label> <input type="text" placeholder="Enter your name" id="name" name="name">
 			</div>
 			<div>
-				Email: <input type="Email" placeholder="Enter your email">
+				<label for="email">Email: </label><input type="Email" placeholder="Enter your email" id="email" name="email">
 			</div>
 			<div>
-				Message: <textarea cols="30" rows="5"></textarea>
+				<label for="message">Message:</label> <textarea cols="30" rows="5" id="message" name="message"></textarea>
+			</div>
+			<div>
+				<p>Subscribe to future offers by:</p>
+				<label for="newsletter">Newsletter</label>
+				<input type="checkbox" name="subscribe" value="newsletter">
+
+				<label for="email-checkbox">Email</label>
+				<input type="checkbox" name="subscribe" value="email-checkbox"> 
+
+				<label for="post">Post</label>
+				<input type="checkbox" name="subscribe" value="post">
+			</div>
+
+			<div>
+				<p>How would you like us to respond?</p>
+				<label for="phoneresponse">Phone</label>
+				<input type="radio" name="response" id="phoneresponse" value="phone">
+
+				<label for="emailresponse">Email</label>
+				<input type="radio" name="response" id="emailresponse" value="email" checked="checked">
 			</div>
 		</form>
 	</main>
