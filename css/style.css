@@ -1,0 +1,66 @@
+header, footer{
+	background-color: #333A40;
+}
+h1{
+color: white;
+}
+html{
+background-color: #f7f7f7;
+}
+body{
+	background: white;
+	max-width: 1000px;
+	margin: 0 auto;
+	font-family: 'Barlow', sans-serif;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style-image: url("img/cables.jpg");
+}
+
+header li{
+	display: inline;
+}
+
+header h1, nav{
+	display: inline-block;
+}
+
+main{
+	max-width: 680px;
+	display: inline-block;
+	text-align: center;
+}
+
+aside{
+	max-width: 270px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.product{
+	box-sizing: border-box;
+	border:1px solid grey;
+	width:210px;
+	margin:0.5%;
+	padding: 0.5%;
+	display:inline-block;
+}
+
+img{
+	max-width: 100%;
+}
+
+.button{
+	padding: 10px;
+	display: inline-block;
+}
+
+aside{
+	border: 1 solid black;
+}
