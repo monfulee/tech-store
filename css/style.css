@@ -1,46 +1,77 @@
 header, footer{
 	background-color: #333A40;
+	color: white;
+	padding: 20px 10px;
 }
 h1{
-color: white;
+	font-size: 30px;
+	color: white;
 }
 html{
 background-color: #f7f7f7;
 }
 body{
 	background: white;
-	max-width: 1000px;
+	max-width: 1200px;
 	margin: 0 auto;
 	font-family: 'Barlow', sans-serif;
+	color: #312E2E;
 }
 
 ul{
-	margin: 0;
+	margin: 0 15px;
 	padding: 0;
+	font-size: 15px;
 }
 
 li{
-	list-style-image: url("img/cables.jpg");
+	list-style: none;
+	line-height: 2;
 }
 
 header li{
 	display: inline;
 }
-
-header h1, nav{
+header h1, nav {
 	display: inline-block;
+}
+header h1{
+	width: 70%;
+}
+
+}
+footer li {
+	display: inline;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover{
+	color: #0e69e9;
+}
+
+main h2{
+	text-align: left;
+	padding-left: 2%;
 }
 
 main{
+	position: relative;
 	max-width: 680px;
 	display: inline-block;
 	text-align: center;
+	padding: 2%;
+
 }
 
 aside{
-	max-width: 270px;
+	width: 25%;
 	display: inline-block;
 	vertical-align: top;
+	padding: 2%;
 }
 
 .product{
@@ -61,6 +92,91 @@ img{
 	display: inline-block;
 }
 
-aside{
-	border: 1 solid black;
+.button:last-of-type{
+	background: #0e69e9;
+	color: white;
 }
+
+.button:hover{
+	bac: 0.8;
+}
+
+/*product detail page*/
+.product-detail{
+	width: 800px;
+	text-align: left;
+}
+
+.product-detail img{
+	max-width: 50%;
+	float: left;
+}
+
+.product-detail-2{
+	border: 1px solid;
+	width: 330px;
+	height: 220px;
+}
+.product-detail-2 img{
+	max-width: 50%;
+	float: left;
+}
+
+/*Contact Us*/
+form{
+	text-align: left;
+	padding: 10px;
+	margin: 10px 0;
+	width: 600px;
+}
+
+form > div{
+	margin: 10px 0;
+}
+
+.inline label{
+	display: inline-block;
+	width: 100px;
+}
+
+input[type="text"], input[type="email"], textarea{
+	padding: 10px;
+	width:400px;
+}
+
+table{
+	width: 400px;
+	margin: 20px 0;
+	text-align: left;
+}
+tr {
+	padding: 10px;
+}
+caption{
+	font-style: italic;
+	border-bottom: 1px dotted;
+	padding: 10px;
+	font-weight: bold;
+}
+
+tr:hover{
+	background:#f5f5f5;
+}
+th, td{
+	padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
