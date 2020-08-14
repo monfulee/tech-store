@@ -3,6 +3,9 @@ header, footer{
 	color: white;
 	padding: 20px 10px;
 }
+input[type="search"]{
+	width: 100%;
+}
 h1{
 	font-size: 30px;
 	color: white;
@@ -12,10 +15,10 @@ background-color: #f7f7f7;
 }
 body{
 	background: white;
-	max-width: 1200px;
 	margin: 0 auto;
 	font-family: 'Barlow', sans-serif;
 	color: #312E2E;
+	text-align: center;
 }
 
 ul{
@@ -36,7 +39,7 @@ header h1, nav {
 	display: inline-block;
 }
 header h1{
-	width: 70%;
+	width: 100%;
 }
 
 }
@@ -57,31 +60,16 @@ main h2{
 	text-align: left;
 	padding-left: 2%;
 }
-
-main{
-	position: relative;
-	max-width: 680px;
-	display: inline-block;
-	text-align: center;
-	padding: 2%;
-
-}
-
-aside{
-	width: 25%;
-	display: inline-block;
-	vertical-align: top;
-	padding: 2%;
-}
-
 .product{
 	box-sizing: border-box;
 	border:1px solid grey;
-	width:210px;
-	margin:0.5%;
+	width: 100%;
+	text-align: center;
+/*	width:210px;
+*/	margin:0.5%;
 	padding: 0.5%;
-	display:inline-block;
-}
+/*	;
+*/}
 
 img{
 	max-width: 100%;
@@ -165,6 +153,51 @@ tr:hover{
 th, td{
 	padding: 10px;
 }
+@media (min-width: 800px){
+	input[type="search"]{
+		width: 40%;
+		margin-left: 2em;
+	}
+
+	.product{
+		display:inline-block;
+		width: 48%;
+	}
+}
+@media (min-width: 1000px){
+	body{
+		text-align: left;
+	}
+	header h1{
+		width: 60%;
+	}
+	main{
+	position: relative;
+	max-width: 68%;
+	display: inline-block;
+	text-align: center;
+	padding: 2%;
+	}
+
+	aside{
+		width: 22%;
+		display: inline-block;
+		vertical-align: top;
+		padding: 2%;
+	}
+}
+@media (min-width: 1200px){
+	body{
+		max-width: 80vw;	
+	}
+	.product {
+		width: 30%;
+	}
+	input[type="search"]{
+		width: 17%;
+	}
+}
+
 
 
 
